@@ -2,7 +2,7 @@ This project performs exploratory data analysis and visualization on a dataset o
 
 The link to the book URL is as below:
 
-jtr13.github.io/EDAVtemplate/
+tianyuhan31.github.io/5702FinalProject/
 
 
 *This repo was initially generated from a bookdown template available here: https://github.com/jtr13/EDAVtemplate.*	

@@ -1,15 +1,30 @@
 # Data 
 
 ## Sources
+```{r}
+projectdata <- read.csv("/Users/tianyuhan/Desktop/5702data.csv")
+projectdata[projectdata == ''] <- NA
+```
 
 ## Cleaning / transformation
 ```{r}
-projectdata <- read.csv("/Users/tianyuhan/Desktop/5702data.csv")
+#remove columns with duplicate meanings 
+df = subset(projectdata, select = -c(Crm.Cd, Weapon.Used.Cd, Premis.Cd))
 ```
+
+
 
 ## Missing value analysis
-```{r}
-colSums(is.na(projectdata)) %>% sort
+```{r fig.width = 11}
+na<-sapply(df, function(x) sum(is.na(x)))
+barplot(na[10:26],)
 ```
 
-After we import the data into R Studio, we noticed missing values in some of the columns. These missing values are filled with NAs. Then, we used "sapply(data, function(x) sum(is.na(x)))" to count the number of NAs in each column. Columns {Crm Cd 2, Crm Cd3, Crm Cd, Cross Street} have a significant number of values missing; therefore we will drop these four columns from our dataset. For other columns that have missing values, we will keep the NAs, but we will not draw conclusions that rely heavily on the values of these columns. 
+We used sapply with function to count the number of NAs in each column. Columns {Crm.Cd.2, Crm.Cd.3, Crm.Cd.4} have a significant number of values missing. The large number of missing values in these three columns are resulting from the fact that the majority of criminals are guilty of a single crime offense. There is very few criminal who commits more than one crime in one offense. Therefore, we decide to drop these three columns for our data analysis project in order to generate analysis on a more general pattern. For other columns that have missing values, we will keep the NAs, but we will not draw conclusions that rely heavily on the NA values of these columns. 
+
+```{r}
+library(extracat)
+visna(df, sort='b')
+```
+
+

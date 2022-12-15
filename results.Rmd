@@ -8,7 +8,7 @@ library(scales)
 
 ## Count of crime in different areas
 ```{r}
-ggplot(df, aes(x=fct_relevel(AREA.NAME))) +
+ggplot(df, aes(x=fct_rev(fct_infreq(AREA.NAME)))) +
 geom_bar(fill = "#56B4E9")+
 coord_flip() +
 xlab("Area name") +
@@ -20,8 +20,11 @@ We want to create a bar chart for each area first because the question to where 
 
 ## Bar chart for race of the victim
 ```{r}
-ggplot(df, aes(x=factor(Vict.Descent))) +
-geom_bar(fill = "#56B4E9")
+ggplot(df, aes(x=fct_infreq(Vict.Descent))) +
+geom_bar(fill = "#56B4E9") +
+xlab("Race") +
+ylab("Count") + 
+ggtitle("Count of crime victim for each race")
 ```
 
 We want to create this bar chart showing the count for each crime victim's race. As we can see from the bar chart, H has the highest number of count, which corresponds to Hispanic/ Latin/ Mexican. The second highest count is W, which is White, and the third highest one is B, Black.

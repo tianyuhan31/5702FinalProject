@@ -26,5 +26,5 @@ We used sapply with function to count the number of NAs in each column. Columns 
 library(extracat)
 visna(df, sort='b')
 ```
-
+Similar to what the previous graph has shown us, we are seeing a significant number of row missing from Crm.Cd.4, Crm.Cd.3, and Crm.Cd.2. Also, we are seeing that the columns of victim descent and victim sex are having the same missing pattern. We can safely deter that availabitiy of different information  about the victim is highly correlated. If the victim's sex is not on file, then its descent will not be on file, and vice versa. Therefore, keeping all these columns with missing values and their relative patterns in mind. We will be able to generate more thorough, unbiased findings without any interference caused by missing data. 
 

@@ -84,9 +84,27 @@
 <li class="chapter" data-level="3.2" data-path="data.html"><a href="data.html#cleaning-transformation"><i class="fa fa-check"></i><b>3.2</b> Cleaning / transformation</a></li>
 <li class="chapter" data-level="3.3" data-path="data.html"><a href="data.html#missing-value-analysis"><i class="fa fa-check"></i><b>3.3</b> Missing value analysis</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>4</b> Results</a></li>
+<li class="chapter" data-level="4" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>4</b> Results</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="results.html"><a href="results.html#count-of-crime-in-different-areas"><i class="fa fa-check"></i><b>4.1</b> Count of crime in different areas</a></li>
+<li class="chapter" data-level="4.2" data-path="results.html"><a href="results.html#bar-chart-for-race-of-the-victim"><i class="fa fa-check"></i><b>4.2</b> Bar chart for race of the victim</a></li>
+<li class="chapter" data-level="4.3" data-path="results.html"><a href="results.html#cleveland-dot-pot-for-the-most-often-crime-location"><i class="fa fa-check"></i><b>4.3</b> Cleveland dot pot for the most often crime location</a></li>
+<li class="chapter" data-level="4.4" data-path="results.html"><a href="results.html#bar-chart-for-the-top20-most-likely-commited-crime"><i class="fa fa-check"></i><b>4.4</b> Bar chart for the top20 most likely commited crime</a></li>
+<li class="chapter" data-level="4.5" data-path="results.html"><a href="results.html#most-likely-age-range-to-be-a-crime-victim"><i class="fa fa-check"></i><b>4.5</b> Most likely age range to be a crime victim</a></li>
+<li class="chapter" data-level="4.6" data-path="results.html"><a href="results.html#separate-age-range-and-observe-each-group"><i class="fa fa-check"></i><b>4.6</b> Separate age range and observe each group</a></li>
+<li class="chapter" data-level="4.7" data-path="results.html"><a href="results.html#the-most-likely-happened-crime-for-each-gender-group"><i class="fa fa-check"></i><b>4.7</b> The most likely happened crime for each gender group</a></li>
+<li class="chapter" data-level="4.8" data-path="results.html"><a href="results.html#theft-over-time"><i class="fa fa-check"></i><b>4.8</b> Theft over time</a></li>
+<li class="chapter" data-level="4.9" data-path="results.html"><a href="results.html#top-10-weapons"><i class="fa fa-check"></i><b>4.9</b> Top 10 Weapons</a></li>
+<li class="chapter" data-level="4.10" data-path="results.html"><a href="results.html#heatmap-for-visualizing-the-frequency-of-crimes-in-each-area-by-month"><i class="fa fa-check"></i><b>4.10</b> Heatmap for visualizing the frequency of crimes in each area by month</a></li>
+</ul></li>
 <li class="chapter" data-level="5" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>5</b> Interactive component</a></li>
-<li class="chapter" data-level="6" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>6</b> Conclusion</a></li>
+<li class="chapter" data-level="6" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>6</b> Conclusion</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="conclusion.html"><a href="conclusion.html#main-takeaway"><i class="fa fa-check"></i><b>6.1</b> Main takeaway</a></li>
+<li class="chapter" data-level="6.2" data-path="conclusion.html"><a href="conclusion.html#limitation"><i class="fa fa-check"></i><b>6.2</b> Limitation</a></li>
+<li class="chapter" data-level="6.3" data-path="conclusion.html"><a href="conclusion.html#future-directions"><i class="fa fa-check"></i><b>6.3</b> Future directions</a></li>
+<li class="chapter" data-level="6.4" data-path="conclusion.html"><a href="conclusion.html#lesson-learned"><i class="fa fa-check"></i><b>6.4</b> Lesson learned</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -108,7 +126,23 @@
             <section class="normal" id="section-">
 <div id="conclusion" class="section level1 hasAnchor" number="6">
 <h1><span class="header-section-number">Chapter 6</span> Conclusion<a href="conclusion.html#conclusion" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="main-takeaway" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Main takeaway<a href="conclusion.html#main-takeaway" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this project, our team chose to analyze one of the most iconic cities, Los Angeles, in the United States, known to be home to movie stars, and film studios, but also violence in certain areas. We used different graph visualization tools to display the relationship between different variables. As displayed in the results session, we used a bar chart to show the frequency of crimes associated with victim races and concluded that Hispanic/ Latin/ Mexican are the races that are most likely to be crime victims. The second highest is White, and the third is Black. We are also interested in finding out which specific areas these crimes took place, for instance, do people get attacked in the parking lot more often than in the alley? The Cleveland dot pot helped us compare the frequencies of crimes in different places and visualize them regarding each other’s relative frequency. Based on our observation, crimes mostly happen on streets or in single-family dwellings, and the places where crimes were most likely to happen were Central, followed by 77th Street, specifically. The bar chart also enabled us to view the top 20 most likely committed crimes in LA. Meanwhile, bar charts with facets allowed us to split the crimes based on different groups, and we can thus discuss crime types with regard to the victim’s ages. Similarly, splitting crimes into gender groups also provided insights into which crime types were associated with each gender more frequently. For some specific crimes such as theft, we used geom_smooth to visualize the yearly count for stolen items (vehicles in our case), and the smooth line indicated a slightly increasing trend starting from 2020 on. The pie chart on the most used weapons displayed the percentage of weapons involved in crimes. Dropping the N/As, the most used weapon was “Strong-Arm” such as hands and fists, followed by verbal threats and handguns. Last but not least, we created a heatmap to display the number of crimes in LA by month of crimes and area. The shade of the heatmap helped users to clearly understand the severity of the crime rate concerning area names and monthly trends. Again, Central and 77th Street had the most crime happenings, and crimes were approximately evenly split between different months, except that fewer crimes happened in December.</p>
+</div>
+<div id="limitation" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Limitation<a href="conclusion.html#limitation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Although data visualization tools enabled us to generate graphs regarding the topics or the relationships we are interested in, we could not understand the fundamental reasons for such observations. For example, the graph of crime frequencies vs. victim ages could tell whether an age group was likely to become crime victims. But we may still have to combine the graph with other information, such as crime place and time, or even a questionnaire and other research results, to generate more meaningful insights on why the crime happened and how we could help lower the crime rate.</p>
+</div>
+<div id="future-directions" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Future directions<a href="conclusion.html#future-directions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We can expand our timeline to years before the pandemic, for instance, collect data from 2012 till the present. Then we will be able to conclude if the pandemic has affected and changed a lot of people’s living environment, thus contributing to the increasing crime rate in Los Angeles, and similarly for other big cities in the United States. Also, if we focus on two or three specific areas where the crime rate is extremely high in Los Angeles, we will be able to dig deeper into those districts and provide a more detailed analysis as to why these specific areas are more likely to have crime activities. And thus making proper predictions about the crime rate and types for 2023.</p>
+</div>
+<div id="lesson-learned" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Lesson learned<a href="conclusion.html#lesson-learned" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>By completing the project, our team became more familiar with the characteristics of data visualization tools and learned to choose different graphs when analyzing results and relationships. For example, using a pie chart to plot the most frequently used weapons was probably the most appropriate compared to other chart types. Similarly, creating bar chart with facets could help us visualize the frequency of crime types and at the same time compare and discuss victims’ ages in these crimes. To sum up, the project taught us to analyze data types and characteristics to understand our data structure and consider the information we could generate based on the variable. We also gained plentiful hands-on experience in plotting graphs and playing with graph characteristics. Therefore, with the tools and skills learned, we created multiple graphs with commentary explanations of the analysis of crime in LA, and wish that our results can contribute to some ongoing or future studies of crime rate control.</p>
 
+</div>
 </div>
             </section>
 

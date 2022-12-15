@@ -23,7 +23,7 @@
 <meta name="author" content="Tianyu Han, Shijia Huang, Lin Gong" />
 
 
-<meta name="date" content="2022-11-01" />
+<meta name="date" content="2022-12-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -76,10 +76,7 @@
 <li class="chapter" data-level="2" data-path="proposal.html"><a href="proposal.html"><i class="fa fa-check"></i><b>2</b> Proposal</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="proposal.html"><a href="proposal.html#research-topic"><i class="fa fa-check"></i><b>2.1</b> Research topic</a></li>
-<li class="chapter" data-level="2.2" data-path="proposal.html"><a href="proposal.html#data-availability"><i class="fa fa-check"></i><b>2.2</b> Data availability</a>
-<ul>
-<li class="chapter" data-level="2.2.1" data-path="proposal.html"><a href="proposal.html#missing-values-in-dataset"><i class="fa fa-check"></i><b>2.2.1</b> Missing Values in Dataset</a></li>
-</ul></li>
+<li class="chapter" data-level="2.2" data-path="proposal.html"><a href="proposal.html#data-availability"><i class="fa fa-check"></i><b>2.2</b> Data availability</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>3</b> Data</a>
 <ul>
@@ -111,6 +108,31 @@
             <section class="normal" id="section-">
 <div id="interactive-component" class="section level1 hasAnchor" number="5">
 <h1><span class="header-section-number">Chapter 5</span> Interactive component<a href="interactive-component.html#interactive-component" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<pre><code>##                                                 Crm.Cd.Desc  freq
+## 1                                          VEHICLE - STOLEN 64677
+## 2                                  BATTERY - SIMPLE ASSAULT 47165
+## 3                                     BURGLARY FROM VEHICLE 37442
+## 4   VANDALISM - FELONY ($400 &amp; OVER, ALL CHURCH VANDALISMS) 37356
+## 5                                                  BURGLARY 36027
+## 6            ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT 34993
+## 7                                         THEFT OF IDENTITY 34669
+## 8                        THEFT PLAIN - PETTY ($950 &amp; UNDER) 30592
+## 9                         INTIMATE PARTNER - SIMPLE ASSAULT 30559
+## 10          THEFT FROM MOTOR VEHICLE - PETTY ($950 &amp; UNDER) 24095
+## 11                                                  ROBBERY 20872
+## 12      THEFT FROM MOTOR VEHICLE - GRAND ($950.01 AND OVER) 19199
+## 13 THEFT-GRAND ($950.01 &amp; OVER)EXCPT,GUNS,FOWL,LIVESTK,PROD 18316
+## 14                 VANDALISM - MISDEAMEANOR ($399 OR UNDER) 17386
+## 15                   CRIMINAL THREATS - NO WEAPON DISPLAYED 12349
+## 16                 SHOPLIFTING - PETTY THEFT ($950 &amp; UNDER) 10390
+## 17                                          BRANDISH WEAPON  9336
+## 18                    INTIMATE PARTNER - AGGRAVATED ASSAULT  8305
+## 19                                              TRESPASSING  7865
+## 20                           VIOLATION OF RESTRAINING ORDER  7707</code></pre>
+<p>The interactive pie chart is available here:
+<a href="https://vizhub.com/tianyuhan31/e482c788886d48d0821143fa0a1a2c86" class="uri">https://vizhub.com/tianyuhan31/e482c788886d48d0821143fa0a1a2c86</a></p>
+<p>We have chosen to graphed the top 20 most frequently committed crime in LA City using an interactive pie chart in VizHub. Since it would be too messy to graph all 20 crimes in one chart. I have combined crimes ranked 10-20 into one categories called ‘others’ and then made another chart. User can access the auxiliary chart by clicking the slice of pie in the main chart called ‘others’. Moreover, user can also come back to the main chart by clicking a button on the auxiliary chart.</p>
+<p>This interactive pie chart has demonstrated that there’s not a huge gap in frequency among the top 20 most commited crimes in LA. While stolen vehicle is the most committed crime subcategory; theft, taking up 6 subcategories among the top 20, is the most dominant category of crimes committed.</p>
 
 </div>
             </section>
@@ -158,7 +180,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/tianyuhan31/5702FinalProjectE/blob/main/interactive.Rmd",
+"link": "https://github.com/tianyuhan31/5702FinalProject/blob/main/interactive.Rmd",
 "text": null
 },
 "download": null,

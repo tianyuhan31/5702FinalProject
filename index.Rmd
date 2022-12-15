@@ -7,3 +7,9 @@ site: bookdown::bookdown_site
 
 # Introduction
 
+We are fortunate enough to be able to live and learn in New York City, one of most modern cities in the world. However, on our way to the classes, we are seeing an increasing number of NYPD officers patrolling through the subway stations, and we are often worried by this trend, which results from an increasing number of crimes in NYC. Therefore, we decided to analyze the trend of crimes in another city similar to New York in many ways, Los Angeles. 
+
+Los Angeles is similar to New York in many ways. They are both U.S megacities that are at the heart of transportation, tourism, economy, etc, with people from diverse backgrounds all over the world. Los Angeles is the home to movie stars, beaches, film studios and many great things. But on the other hand, it is also the epicentre for some of the infamous gangs in the world such as the Crips and the Bloods. So some potential questions we are interested in and wish to address include what are the most common crime types in Los Angeles, which age group of people has the most history of crime, and what kind of people is most often to be targeted as the victim, etc. 
+
+
+

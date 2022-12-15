@@ -23,7 +23,7 @@
 <meta name="author" content="Tianyu Han, Shijia Huang, Lin Gong" />
 
 
-<meta name="date" content="2022-11-01" />
+<meta name="date" content="2022-12-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -76,10 +76,7 @@
 <li class="chapter" data-level="2" data-path="proposal.html"><a href="proposal.html"><i class="fa fa-check"></i><b>2</b> Proposal</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="proposal.html"><a href="proposal.html#research-topic"><i class="fa fa-check"></i><b>2.1</b> Research topic</a></li>
-<li class="chapter" data-level="2.2" data-path="proposal.html"><a href="proposal.html#data-availability"><i class="fa fa-check"></i><b>2.2</b> Data availability</a>
-<ul>
-<li class="chapter" data-level="2.2.1" data-path="proposal.html"><a href="proposal.html#missing-values-in-dataset"><i class="fa fa-check"></i><b>2.2.1</b> Missing Values in Dataset</a></li>
-</ul></li>
+<li class="chapter" data-level="2.2" data-path="proposal.html"><a href="proposal.html#data-availability"><i class="fa fa-check"></i><b>2.2</b> Data availability</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>3</b> Data</a>
 <ul>
@@ -122,11 +119,7 @@
 <p>In the end, we decided to use the Crime Data from 2020 to Present provided by Los Angeles Open Data.The crime data from 2020 overcame this issue since it provided more statistics about the crime events, including victim ages, type of weapons, type of vehicles, etc. Therefore, we decided to start our study based on the crime dataset, for it not only addressed more possible factors associated with a crime, but also discussed more types of crime activities (not limited to shooting).</p>
 <p>In recent years, the crime and violence rate has risen to a large extent and led to great social concerns. As New York City residents, we have been concerned about public safety issues for a long time, and we would like to apply the quantitative and visualization skills we learned from class to help draw some conclusions to this problem. Potential questions we can answer from the data may include which age of people has the most history of crime, and which are the most common crime types in the city. As one of the largest cities in the States, Los Angeles also suffered from crime and violence in recent years as California’s violent crime rate increased significantly since 2020 (Magnus Lofstrom and Brandon Martin, 2022). In a nutshell, we hope that the analysis of Los Angeles crime data could provide us with a better understanding of crime events, and possibly generate insights into nationwide crime-control strategies.</p>
 <p>The crime dataset was provided by the Los Angeles Police Department, and transcribed from original crime reports which are typed on paper. It is available in CSV file, RDF file, JSON file, and XML file. Of these different file formats, we chose CSV because it is the most commonly used format. In order to import the data, we will first import the readr package, which runs around 10 times faster than standard r import. Since our dataset is quite large, containing around 600,000 observations, it would be beneficial to have a faster method to import data. Going into analysis, we might run into questions about the data. We can first go onto the website where the dataset is hosted to find detailed descriptions and notes about the different attributes. If the question still cannot be solved, we can contact the dataset owner, Los Angeles Police Department, via the website to resolve our confusion on the dataset.</p>
-<div id="missing-values-in-dataset" class="section level3 hasAnchor" number="2.2.1">
-<h3><span class="header-section-number">2.2.1</span> Missing Values in Dataset<a href="proposal.html#missing-values-in-dataset" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>After we import the data into R Studio, we noticed missing values in some of the columns. These missing values are filled with NAs. Then, we used “sapply(data, function(x) sum(is.na(x)))” to count the number of NAs in each column. Columns {Crm Cd 2, Crm Cd3, Crm Cd, Cross Street} have a significant number of values missing; therefore we will drop these four columns from our dataset. For other columns that have missing values, we will keep the NAs, but we will not draw conclusions that rely heavily on the values of these columns.</p>
 
-</div>
 </div>
 </div>
             </section>
@@ -174,7 +167,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/tianyuhan31/5702FinalProjectE/blob/main/proposal.Rmd",
+"link": "https://github.com/tianyuhan31/5702FinalProject/blob/main/proposal.Rmd",
 "text": null
 },
 "download": null,

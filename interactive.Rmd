@@ -1,3 +1,13 @@
 # Interactive component
+```{r}
+library("plyr")
+freqdata<-count(df, 'Crm.Cd.Desc')
+head(arrange(freqdata, desc(freq)), n = 20)
+```
+The interactive pie chart is available here: 
+https://vizhub.com/tianyuhan31/e482c788886d48d0821143fa0a1a2c86
 
+We have chosen to graphed the top 20 most frequently committed crime in LA City using an interactive pie chart in VizHub. Since it would be too messy to graph all 20 crimes in one chart. I have combined crimes ranked 10-20 into one categories called 'others' and then made another chart. User can access the auxiliary chart by clicking the slice of pie in the main chart called 'others'. Moreover, user can also come back to the main chart by clicking a button on the auxiliary chart. 
+
+This interactive pie chart has demonstrated that there's not a huge gap in frequency among the top 20 most commited crimes in LA. While stolen vehicle is the most committed crime subcategory; theft, taking up 6 subcategories among the top 20, is the most dominant category of crimes committed. 
 
